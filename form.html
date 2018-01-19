@@ -30,21 +30,35 @@
 		  title="AA123456">
 		</label>
 		<br>
-		<nobr>Select a car:</nobr>
+		<nobr>What car do you have:</nobr>
 		<label>
-		    <select>
-		        <option value="volvo">Volvo</option>
-		        <option value="saab">Saab</option>
-		        <option value="mercedes">Mercedes</option>
-		        <option value="audi">Audi</option>
-		    </select>
+			<select>
+			    <option value="volvo">Volvo</option>
+			    <option value="saab">Saab</option>
+			    <option value="mercedes">Mercedes</option>
+			    <option value="audi">Audi</option>
+			</select>
 		</label>
 		<br>
+		<input type="radio" name="gender" value="male" checked> Male<br>
+ 		<input type="radio" name="gender" value="female"> Female<br>
+ 		<input type="checkbox" name="pet1" value="Cat"> I have a cat<br>
+  		<input type="checkbox" name="pet2" value="Dog"> I have a dog<br>
+  		<input type="date" name="bday">
+		<br>
+
 		<label for="password">Password:</label>
 		<input id="password"
 		  type="password" 
 		  name="password"
-		  placeholder="Password" required>		  
+		  placeholder="Password" required>		
+		<br>
+		Telephone number:
+		<input type="text" name="tel"
+		required pattern="[+]{1}[\d]{12}"
+		placeholder="+380671234567"
+		title="+380671234567">
+		<br>  
 		<input type="submit" value="Submit">  
 		<input type="reset">
   </form>
